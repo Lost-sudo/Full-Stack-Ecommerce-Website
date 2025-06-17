@@ -1,6 +1,13 @@
 import React from 'react';
 
 const About: React.FC = () => {
+  const scrollToValues = () => {
+    const valuesSection = document.querySelector('.values-section');
+    if (valuesSection) {
+      valuesSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="about-page">
       {/* Hero Section */}
@@ -10,9 +17,19 @@ const About: React.FC = () => {
             <div className="col-lg-8 text-center">
               <h1 className="display-5 fw-bold mb-2">About ShopHub</h1>
               <div className="mx-auto mb-4" style={{width: '60px', height: '4px', background: 'var(--primary)', borderRadius: '2px'}}></div>
-              <p className="lead text-secondary">
+              <p className="lead text-secondary mb-4">
                 ShopHub is dedicated to providing a seamless, secure, and enjoyable shopping experience. Our mission is to connect you with quality products, trusted brands, and exceptional customer service.
               </p>
+              <button 
+                onClick={scrollToValues}
+                className="btn btn-primary btn-lg rounded-pill px-4 py-2 hover-lift"
+                style={{
+                  transition: 'transform 0.2s',
+                  boxShadow: '0 4px 6px rgba(var(--bs-primary-rgb), 0.2)'
+                }}
+              >
+                Learn More <i className="bi bi-arrow-down-short ms-2"></i>
+              </button>
             </div>
           </div>
         </div>

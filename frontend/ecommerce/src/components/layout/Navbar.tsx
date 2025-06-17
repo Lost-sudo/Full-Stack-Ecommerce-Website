@@ -32,9 +32,9 @@ const Navbar: React.FC<NavbarProps> = () => {
               <Link to="/" className="nav-link text-dark nav-hover">
                 Home
               </Link>
-              <a href="#products" className="nav-link text-secondary nav-hover">
+              <Link to="/products" className="nav-link text-secondary nav-hover">
                 Products
-              </a>
+              </Link>
               <Link to="/about" className="nav-link text-secondary nav-hover">
                 About
               </Link>
@@ -46,12 +46,12 @@ const Navbar: React.FC<NavbarProps> = () => {
 
           {/* Auth Buttons */}
           <div className="d-none d-md-flex align-items-center gap-3">
-            <button className="btn btn-link text-secondary px-3">
+            <Link to="/login" className="btn btn-link text-secondary px-3 text-decoration-none">
               Login
-            </button>
-            <button className="btn btn-primary rounded-pill px-4 fw-semibold shadow-sm">
+            </Link>
+            <Link to="/register" className="btn btn-primary rounded-pill px-4 fw-semibold shadow-sm text-white text-decoration-none">
               Register
-            </button>
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -59,6 +59,7 @@ const Navbar: React.FC<NavbarProps> = () => {
             <button
               onClick={toggleMenu}
               className="btn btn-link text-secondary p-2"
+              aria-label="Toggle navigation menu"
             >
               {isMenuOpen ? (
                 <X className="h-6 w-6" />
@@ -73,25 +74,31 @@ const Navbar: React.FC<NavbarProps> = () => {
         {isMenuOpen && (
           <div className="d-md-none">
             <div className="p-3 bg-white border-top">
-              <a href="#home" className="nav-link text-dark">
+              <Link to="/" className="nav-link text-dark py-2">
                 Home
-              </a>
-              <a href="#products" className="nav-link text-secondary">
+              </Link>
+              <Link to="/products" className="nav-link text-secondary py-2">
                 Products
-              </a>
-              <Link to="/about" className="nav-link text-secondary">
+              </Link>
+              <Link to="/about" className="nav-link text-secondary py-2">
                 About
               </Link>
-              <Link to="/contact" className="nav-link text-secondary">
+              <Link to="/contact" className="nav-link text-secondary py-2">
                 Contact
               </Link>
               <div className="border-top pt-4 mt-4">
-                <button className="btn btn-link text-secondary w-100 text-start">
+                <Link 
+                  to="/login" 
+                  className="btn btn-link text-secondary w-100 text-start text-decoration-none px-0 py-2"
+                >
                   Login
-                </button>
-                <button className="btn btn-primary w-100 text-start mt-2">
+                </Link>
+                <Link 
+                  to="/register" 
+                  className="btn btn-primary w-100 text-start mt-2 text-white text-decoration-none"
+                >
                   Register
-                </button>
+                </Link>
               </div>
             </div>
           </div>
