@@ -1,0 +1,222 @@
+/* Remove Tailwind import and add custom CSS for modern, responsive design */
+
+/* Color palette (based on your current design):
+   Primary: #2563eb (Bootstrap primary)
+   Secondary: #6c757d
+   Light: #f8fafc
+   Dark: #111827
+   Accent: #38bdf8 (for highlights)
+*/
+
+:root {
+  --primary: #2563eb;
+  --secondary: #6c757d;
+  --light: #f8fafc;
+  --dark: #111827;
+  --accent: #38bdf8;
+}
+
+body {
+  background: var(--light);
+  color: var(--dark);
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.04);
+  background: #fff;
+}
+.navbar .nav-link.active, .navbar .nav-link:focus, .navbar .nav-link:hover {
+  color: var(--primary) !important;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, #f0f6ff 0%, #e0e7ff 100%);
+  padding: 5rem 0 3rem 0;
+}
+.hero-section h1, .hero-section h2 {
+  color: var(--dark);
+}
+.hero-section .btn-primary {
+  background: var(--primary);
+  border: none;
+}
+.hero-section .btn-outline-primary {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+.hero-section .btn-outline-primary:hover {
+  background: var(--primary);
+  color: #fff;
+}
+
+/* Features Section */
+.features-section {
+  background: #f8fafc;
+  padding: 4rem 0;
+}
+.features-section .card {
+  border-radius: 1.25rem;
+  transition: box-shadow 0.2s;
+}
+.features-section .card:hover {
+  box-shadow: 0 8px 32px rgba(37, 99, 235, 0.10);
+}
+
+/* Stats Section */
+.stats-section {
+  background: var(--primary);
+  color: #fff;
+  padding: 3rem 0;
+}
+.stats-section .col {
+  border-right: 1px solid rgba(255,255,255,0.1);
+}
+.stats-section .col:last-child {
+  border-right: none;
+}
+
+/* CTA Section */
+.cta-section {
+  background: #fff;
+  padding: 3rem 0;
+}
+.cta-section .btn-primary {
+  background: var(--primary);
+  border: none;
+}
+.cta-section .btn-outline-primary {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+.cta-section .btn-outline-primary:hover {
+  background: var(--primary);
+  color: #fff;
+}
+
+/* Footer */
+footer {
+  background: var(--dark);
+  color: #fff;
+  padding: 2.5rem 0 1rem 0;
+}
+footer a {
+  color: var(--secondary);
+  text-decoration: none;
+}
+footer a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 767.98px) {
+  .hero-section {
+    padding: 3rem 0 2rem 0;
+  }
+  .features-section, .stats-section, .cta-section {
+    padding: 2rem 0;
+  }
+  .stats-section .col {
+    border-right: none;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    margin-bottom: 1rem;
+  }
+  .stats-section .col:last-child {
+    border-bottom: none;
+  }
+}
+
+/* --- Navbar Enhancements --- */
+.main-navbar {
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.06);
+  border-bottom: 1px solid #e5eaf2;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.main-navbar .navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.nav-hover {
+  position: relative;
+  transition: color 0.2s;
+}
+.nav-hover::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: var(--primary);
+  transition: width 0.3s;
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+}
+.nav-hover:hover::after, .nav-hover:focus::after {
+  width: 100%;
+}
+
+.main-navbar .btn-primary {
+  border-radius: 999px;
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.10);
+  font-weight: 600;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+/* --- Features Section Enhancements --- */
+.features-section .card {
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 24px rgba(37, 99, 235, 0.08);
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  border: none;
+  transition: transform 0.18s, box-shadow 0.18s;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.features-section .card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(37, 99, 235, 0.16);
+}
+.features-section .icon-box {
+  width: 3.5rem;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary);
+  color: #fff;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+.features-section .card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.features-section .card-text {
+  color: var(--secondary);
+  font-size: 1rem;
+}
+@media (max-width: 767.98px) {
+  .main-navbar {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+  .features-section .card {
+    padding: 1.25rem 1rem 1rem 1rem;
+  }
+  .features-section .icon-box {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.25rem;
+  }
+}
