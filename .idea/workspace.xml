@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0f30e4f7-ed52-4bc7-9611-da9d1bb7a7ed" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/ecommerce/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/ecommerce/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/ecommerce/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/ecommerce/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/ecommerce/public/vite.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/ecommerce/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/ecommerce/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/ecommerce/src/assets/react.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/ecommerce/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/ecommerce/src/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/ecommerce/src/main.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="0f30e4f7-ed52-4bc7-9611-da9d1bb7a7ed" name="Changes" comment="Refactor frontend structure: remove unused files, add `About` and `Contact` pages, create reusable components, and update styles for improved UX/UI design." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,35 +10,35 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Lost-sudo"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Lost-sudo&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Lost-sudo/Full-Stack-Ecommerce-Website.git",
-    "accountId": "ef2c0cab-358b-496f-8c13-e86355dd82ab"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Lost-sudo/Full-Stack-Ecommerce-Website.git&quot;,
+    &quot;accountId&quot;: &quot;ef2c0cab-358b-496f-8c13-e86355dd82ab&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 5
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2yczLEYTivb8v1Qp7Az0tN9QQRo" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -64,6 +54,19 @@
       <option name="presentableId" value="Default" />
       <updated>1750148592522</updated>
     </task>
+    <task id="LOCAL-00001" summary="Refactor frontend structure: remove unused files, add `About` and `Contact` pages, create reusable components, and update styles for improved UX/UI design.">
+      <option name="closed" value="true" />
+      <created>1750152571685</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1750152571685</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Refactor frontend structure: remove unused files, add `About` and `Contact` pages, create reusable components, and update styles for improved UX/UI design." />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor frontend structure: remove unused files, add `About` and `Contact` pages, create reusable components, and update styles for improved UX/UI design." />
   </component>
 </project>
